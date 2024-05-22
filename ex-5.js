@@ -1,7 +1,16 @@
-let crimeRecordNames = ["Theodora Milenko", "Tinashe Benigno", "Mahalia Priyanka", "Maisy Sudhir"];
+let crimeRecordNames = [
+  "Theodora Milenko",
+  "Tinashe Benigno",
+  "Mahalia Priyanka",
+  "Maisy Sudhir",
+];
 
 function searchCrimeRecord(name) {
   // Start coding here
+  let result = crimeRecordNames.filter((item) => item === name);
+  return result.length > 0
+    ? `${name} has a crime record!!!`
+    : `${name} has no crime record.`;
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
